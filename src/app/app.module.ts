@@ -13,6 +13,12 @@ import { LabprescriptionsComponent } from './labprescriptions/labprescriptions.c
 import { LabprescriptionComponent } from './labprescriptions/labprescription/labprescription.component';
 import { LabprescriptionListComponent } from './labprescriptions/labprescription-list/labprescription-list.component';
 import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
+import { ReceptionistComponent } from './receptionist/receptionist.component';
+import { DoctorComponent } from './doctor/doctor.component';
+import { LabtechnicianComponent } from './labtechnician/labtechnician.component';
+import { PharmacistComponent } from './pharmacist/pharmacist.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +29,13 @@ import { LoginComponent } from './login/login.component';
     LabprescriptionsComponent,
     LabprescriptionComponent,
     LabprescriptionListComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent,
+    ReceptionistComponent,
+    DoctorComponent,
+    LabtechnicianComponent,
+    PharmacistComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
