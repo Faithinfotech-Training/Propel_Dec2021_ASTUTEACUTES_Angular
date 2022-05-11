@@ -12,6 +12,7 @@ import { PharmacistComponent } from './pharmacist/pharmacist.component';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { LabtestComponent } from './labtest/labtest.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
     DoctorComponent,
     LabtechnicianComponent,
     PharmacistComponent,
-    HeaderComponent
+    HeaderComponent,
+    LabtestComponent
   ],
   imports: [
     BrowserModule,
