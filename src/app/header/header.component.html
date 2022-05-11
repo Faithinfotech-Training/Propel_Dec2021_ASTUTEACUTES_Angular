@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   
+    <div class="container-fluid">
+        <ul class="nav nav-pills nav-fill">
+
+            <li class="nav-item active">
+                <a routerLink=''class="nav-link" (click)="goHome()"
+                style="color:white;">Home</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav text-right">
+            <a class="btn btn-secondary">{{userName}} - {{roleName}}</a>
+            <li class="nav-item">
+             
+                <a routerLink="" (click)="logOut()"
+                class="navbar-brand" style="color: white;">logOut</a>
+            </li>
+        </ul>
+     </div>
+
+    </nav>
