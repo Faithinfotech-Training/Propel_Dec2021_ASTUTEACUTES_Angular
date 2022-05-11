@@ -1,0 +1,59 @@
+<div class="container">
+
+
+
+    <br>
+
+    <table class="table table-bordered table-striped">
+            <thead>
+                    <tr>
+                        <th>Appointment ID</th>
+                        <th>Patient ID</th>
+                        <th>Token Number</th>
+                        <th>Doctor ID</th>
+                        <th>Patient Name</th>
+                        <th>Date Of Appointment</th>
+                        <th>Date Of Creation</th>
+                        <th>Action</th>
+                        <th>View Medicine</th>
+                        <th>View LabTest</th>
+                        <th>View Notes</th>
+                        <th>View Test Report</th>
+                        <th>Add Medicine</th>
+                        <th>Add LabTest</th>
+                        <th>Add Notes</th>
+
+                    </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let appo of appointmentService.appointments">
+                    <td>{{appo.appoinId}}</td>
+                    <td>{{appo.patientId}}</td>
+                    <td>{{appo.tokenNum}}</td>
+                    <td>{{appo.docId}}</td>
+                    <td>{{appo.fullName}}</td>
+                    <td>{{appo.doa | date: 'dd-MMM-yyyy'}} </td>
+                    <td>{{appo.createdDate | date: 'dd-MMM-yyyy'}} </td>
+                    <td><button class="btn btn-info">Edit</button>&nbsp;
+                        <button class="btn btn-sm btn-outline-danger">X</button></td>
+                        <td><button class="btn btn-info">View</button></td>
+                        <td><button class="btn btn-info">View</button></td>
+                        <td><button class="btn btn-info">View</button></td>
+                        <td><button class="btn btn-info">View</button></td>
+                        <td><button class="btn btn-info">Add</button></td>
+                        <td><button class="btn btn-info">Add</button></td>
+                        <td><button class="btn btn-info">Add</button></td>
+
+                        
+
+
+                </tr>
+
+            </tbody>
+
+
+    </table>
+ 
+</div>
+
